@@ -1,2 +1,6 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
+<h1 class="main-heading">Stupid Coaching</h1>
+<h2 class="sub-heading">Ask your coach anything:</h2>
+<form action="/questions/answer" method="get" data-turbo="false" class="question-form">
+  <input type="text" name="question" class="question-input" placeholder="Type your question here...">
+  <input type="submit" value="Ask!" class="ask-button">
+</form>

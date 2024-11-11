@@ -1,2 +1,23 @@
-<h1>Questions#answer</h1>
-<p>Find me in app/views/questions/answer.html.erb</p>
+<h1 class="main-heading">Stupid Coaching</h1>
+
+<h2 class="sub-heading">Your coach's answer:</h2>
+
+<div class="answer-container">
+  <div class="rectangle-container">
+    <div class="vertical-rectangle"></div>
+    <div class="text-container">
+      <p class="question-text"><%= @question %></p>
+      <p class="question-author">- You</p>
+    </div>
+  </div>
+
+  <div class="rectangle-container">
+    <div class="vertical-rectangle"></div>
+    <div class="text-container">
+      <p class="answer-text"><%= @answer %></p>
+      <p class="answer-author">- Your coach</p>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Ask another question', class: 'back-link' %>
